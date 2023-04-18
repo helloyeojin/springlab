@@ -1,14 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec69ca4e-8634-4e13-a697-789b646d5968" name="Changes" comment="" />
+    <list default="true" id="ec69ca4e-8634-4e13-a697-789b646d5968" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day01/src/main/java/com/kbstar/app/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day01/src/main/java/com/kbstar/frame/TV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day01/src/main/java/com/kbstar/tv/LTV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day01/src/main/java/com/kbstar/tv/STV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/main/java/com/kbstar/app/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/main/java/com/kbstar/frame/TV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/main/java/com/kbstar/tv/LTV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/main/java/com/kbstar/tv/STV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/main/resources/spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day021/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day021/src/main/java/com/kbstar/app/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day021/src/main/java/com/kbstar/app/TestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day021/src/main/java/com/kbstar/dao/OracleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day021/src/main/java/com/kbstar/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day021/src/main/java/com/kbstar/frame/MyDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day021/src/main/java/com/kbstar/frame/MyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day021/src/main/java/com/kbstar/service/BankingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day021/src/main/resources/spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day022_XML/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day022_XML/src/main/java/com/kbstar/app/UserInsertTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day022_XML/src/main/java/com/kbstar/dao/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day022_XML/src/main/java/com/kbstar/dao/UserMySQLDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day022_XML/src/main/java/com/kbstar/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day022_XML/src/main/java/com/kbstar/frame/MyDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day022_XML/src/main/java/com/kbstar/frame/MyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day022_XML/src/main/java/com/kbstar/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day022_XML/src/main/resources/spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day023_ANN/src/main/java/com/kbstar/dao/UserMySQLDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day01/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/src/main/java/com/kbstar/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day02/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02/src/main/java/com/kbstar/Main.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="ProjectId" id="2OZnxVeUWcVELow42C3V2nrlGlK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -20,10 +84,97 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "/Users/siyo/spring/springlab",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/siyo/spring/springlab/day022/src/main/java/com/kbstar/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.intellij.sdk.settings.AppSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/day022/src/main/resources" />
+      <recent name="$PROJECT_DIR$/day022/src/main/java/com/kbstar" />
+      <recent name="$PROJECT_DIR$/day021/src/main/java/com/kbstar" />
+      <recent name="$PROJECT_DIR$/day021/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.kbstar.dao" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.UserInsertTest (1)">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kbstar.app.App" />
+      <module name="day02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kbstar.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kbstar.app.Test" />
+      <module name="day021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kbstar.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserInsertTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kbstar.app.UserInsertTest" />
+      <module name="day023_ANN" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kbstar.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserInsertTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kbstar.app.UserInsertTest" />
+      <module name="day022_XML" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kbstar.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UserInsertTest (1)" />
+        <item itemvalue="Application.UserInsertTest" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -32,6 +183,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681777221043</updated>
+      <workItem from="1681777222078" duration="12404000" />
     </task>
     <servers />
   </component>
