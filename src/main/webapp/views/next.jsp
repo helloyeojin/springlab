@@ -12,5 +12,7 @@
 </head>
 <body>
     <h1>이것은 Next page</h1>
+    <h2>${mydata}</h2>
+    <img src="img/questionbono.jpg"
 </body>
 </html>

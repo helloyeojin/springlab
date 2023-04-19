@@ -13,6 +13,7 @@
 <body>
     <h1>안녕안녕</h1>
     <h2><a href="/next">지금은 스프링 수업시간</a></h2>
-<%--화면에서 a 태그가 next라고 요청을 하면 main controller.java로 갑니다--%>
+    <h2><a href="/second">두번째 페이지</a></h2>
+    <%--화면에서 a 태그가 next라고 요청을 하면 main controller.java로 갑니다--%>
 </body>
 </html>
