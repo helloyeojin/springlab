@@ -1,51 +1,31 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
 <script>
-    let login_form = {
-        init:function(){
-            $('#login_btn').click(function(){
-                login_form.send();
-            });
-        },
-        send: function(){
-            $('#login_form').attr({
-                'action':'/loginimpl',
-                'method':'get'
-            });
-            $('#login_form').submit();
-        }
-    };
-    $(function(){
+    $(function (){
         login_form.init();
     });
 </script>
 
-<div class="col-sm-6 text-center">
-    <div class = "row content text-center" style="display: inline-block;">
-
-            <form name="login_form" id="login_form">
-
-                <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Log in</h3>
-
-                <div class="form-outline mb-4">
-                    <input type="email" id="form2Example18" name="email" class="form-control form-control-lg" />
-                    <label class="form-label" for="form2Example18">Email address</label>
-                </div>
-
-                <div class="form-outline mb-4">
-                    <input type="password" id="form2Example28" name="pwd" class="form-control form-control-lg" />
-                    <label class="form-label" for="form2Example28">Password</label>
-                </div>
-            </form>
-        <div>
-            <button class="btn btn-info btn-lg btn-block" type="button" id="login_btn">Login</button>
+<div class="col-sm-8 text-left">
+    <div class="container">
+        <div class="row content">
+            <div class="col-sm-8 text-left">
+                <h1>Login Page</h1>
+                <form id="login_form" class="well" style="margin-top: 30px">
+                    <div class="form-group">
+                        <label for="id">ID:</label>
+                        <input type="text" class="form-control" id="id" placeholder="Enter ID" name="id">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="remember"> Remember me</label>
+                    </div>
+                    <button type="button" class="btn btn-default" id="login_btn" >Login</button>
+                </form>
+            </div>
         </div>
-        <div>
-        <p class="small mb-5 pb-lg-2"><a class="text-muted" href="#!">Forgot password?</a></p>
-        <p>Don't have an account? <a href="#!" class="link-info">Register here</a></p>
-        </div>
-
-</div>
-</div>
+    </div>
 </div>
