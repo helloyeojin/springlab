@@ -4,7 +4,7 @@
 <style>
   #getdata > div {
     width: 500px;
-    border:2px solid red;
+    border:1px solid cornflowerblue;
   }
 </style>
 <script>
@@ -46,7 +46,7 @@
 <div class="col-sm-8 text-left">
   <div class="container" id="getdata">
     <h3>AJAX03</h3>
-    <button type="button" class="btn btn-success">GET DATE</button>
+    <button type="button" class="btn btn-success">GET DATA</button>
     <div></div>
   </div>
 </div>
