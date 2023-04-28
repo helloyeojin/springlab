@@ -17,10 +17,14 @@ class SelectOneTest {
 
     @Test
     void contextLoads() {
+        Cust cust = null;
         try{
-            service.get("id01");
+            cust=service.get("id77");
+            log.info("--------------------------------------");
+            log.info(cust.toString());
+            log.info("--------------------------------------");
         } catch (Exception e){
-            log.info("에러..........");
+            log.info("--------------------------------------");
             e.printStackTrace();
         }
     }

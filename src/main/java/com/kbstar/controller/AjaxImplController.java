@@ -4,6 +4,7 @@ package com.kbstar.controller;
 
 import com.kbstar.dto.Cust;
 import com.kbstar.dto.Marker;
+import com.kbstar.service.CustService;
 import com.kbstar.service.MarkerService;
 import lombok.extern.slf4j.Slf4j;
 import org.json.simple.JSONArray;
@@ -21,7 +22,9 @@ import java.util.Random;
 public class AjaxImplController {
 
     @Autowired
-    MarkerService service;
+    MarkerService markerService;
+    @Autowired
+    CustService custService;
 
 
     @RequestMapping("/getservertime")
@@ -56,10 +59,12 @@ public class AjaxImplController {
     }
 
     @RequestMapping("/checkid")
-    public Object checkid(String id) {
+    public Object checkid(String id) throws Exception {
         int result = 0;
-        if (id.equals("qqq") || id.equals("aaa") || id.equals("sss")) {
-            result = 1;
+        Cust cust = null;
+        cust = custService.get(id);
+        if(cust != null){
+            result=1;
         }
         return result;
     }
@@ -76,14 +81,14 @@ public class AjaxImplController {
     }
 
     @RequestMapping("/markers")
-    public Object markers(String loc) {
+    public Object markers(String loc) throws Exception {
         List<Marker> list=null;
         try {
-            list= service.get();
+            list= markerService.getLoc(loc);
 
         } catch (Exception e) {
-            log.info("error...");
-            e.printStackTrace();
+           throw new Exception("시스템 장애");
+
         }
 //        if (loc.equals("s")) {
 //            list.add(new Marker(100, "국밥", "http://www.nate.com", 37.577617, 126.975041, "a.jpeg", "s"));
@@ -103,17 +108,15 @@ public class AjaxImplController {
 //        }
         JSONArray ja = new JSONArray();
         for (Marker obj : list) {
-            if (obj.getLoc().equals(loc)) {
-                JSONObject jo = new JSONObject();
-                jo.put("id", obj.getId());
-                jo.put("title", obj.getTitle());
-                jo.put("target", obj.getTarget());
-                jo.put("lat", obj.getLat());
-                jo.put("lng", obj.getLng());
-                jo.put("img", obj.getImg());
-                jo.put("loc", obj.getLoc());
-                ja.add(jo);
-            }
+            JSONObject jo = new JSONObject();
+            jo.put("id", obj.getId());
+            jo.put("title", obj.getTitle());
+            jo.put("target", obj.getTarget());
+            jo.put("lat", obj.getLat());
+            jo.put("lng", obj.getLng());
+            jo.put("img", obj.getImg());
+            jo.put("loc", obj.getLoc());
+            ja.add(jo);
         }
         return ja;
     }

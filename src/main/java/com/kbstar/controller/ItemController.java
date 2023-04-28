@@ -19,7 +19,7 @@ import java.util.List;
 @RequestMapping("/item")
 public class ItemController {
 
-    Logger logger = LoggerFactory.getLogger(this.getClass().getSimpleName());
+    //Logger logger = LoggerFactory.getLogger(this.getClass().getSimpleName());
     String dir = "item/";
     @Autowired
     ItemService service;
@@ -40,13 +40,12 @@ public class ItemController {
     }
 
     @RequestMapping("/all")
-    public String all(Model model) {
+    public String all(Model model) throws Exception {
         List<Item> list = null;
         try {
             list = service.get();
         } catch (Exception e) {
-            log.info("......에러다.........");
-            e.printStackTrace();
+            throw new Exception("시스템 장애:ER0002");
         }
 //        List<Item> list = new ArrayList<>();
 //        list.add(new Item(100, "rose1", 1000, "a.jpg", new Date()));

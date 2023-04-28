@@ -16,13 +16,13 @@
     init: function () {
       this.display();
       $('#s_btn').click(function () {
-        map03.go(37.640446, 127.014702, 'S');
+        map03.go(37.638346, 127.012152, 's');
       });
       $('#b_btn').click(function () {
-        map03.go(35.1798456, 129.0705432, 'B');
+        map03.go(35.1798456, 129.0705432, 'b');
       });
       $('#j_btn').click(function () {
-        map03.go(33.4999002, 126.5341787, 'J');
+        map03.go(33.4999002, 126.5341787, 'j');
       });
     },
     display: function () {
@@ -122,7 +122,7 @@
 
         kakao.maps.event.addListener(marker, 'mouseover', mouseoverListener(marker, infowindow));
         kakao.maps.event.addListener(marker, 'mouseout', mouseoutListener(marker, infowindow));
-        kakao.maps.event.addListener(marker, 'click', mouseclickListener(positions[i].target));
+        kakao.maps.event.addListener(marker, 'click', mouseclickListener(positions[i].id));
 
 
         function mouseoverListener(marker, infowindow) {
@@ -139,7 +139,7 @@
 
         function mouseclickListener(target) {
           return function () {
-            location.href = target;
+            location.href = '/map/detail?id='+target;
           };
         }
 

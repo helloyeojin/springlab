@@ -22,7 +22,7 @@ public class CustController {
 
     //Logger logger = LoggerFactory.getLogger(this.getClass().getSimpleName());
     String dir = "cust/";
-    @Autowired
+    @Autowired  // dependency 주입
     CustService service;
 
     // 127.0.0.1/cust
@@ -60,13 +60,12 @@ public class CustController {
     }
 
     @RequestMapping("/all")
-    public String all(Model model) {
+    public String all(Model model) throws Exception {
         List<Cust> list = null;
         try{
             list = service.get();
         } catch (Exception e){
-            log.info("에러..........");
-            e.printStackTrace();
+            throw new Exception("시스템 장애: ER0001");
         }
 //        List<Cust> list = new ArrayList<>();
 //        list.add(new Cust("uhmango", "pwd01", "망고"));
