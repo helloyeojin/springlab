@@ -3,6 +3,7 @@ package com.kbstar.controller;
 
 import com.kbstar.dto.Cust;
 import com.kbstar.service.CustService;
+import com.kbstar.util.WeatherUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,12 +24,13 @@ public class MainController {
     Logger logger = LoggerFactory.getLogger(this.getClass().getSimpleName());
     @Autowired
     CustService custService;
-    @Value("${adminserver}")
-    String adminserver;
+//    @Value("${adminserver}")
+//    String adminserver;
 
     @RequestMapping("/")
-    public String main(Model model) {
-        model.addAttribute("adminserver", adminserver);
+    public String main(Model model) throws Exception{
+        String result = WeatherUtil.getWeather1("109");
+        model.addAttribute("weatherinfo", result);
         return "index";
     }
 

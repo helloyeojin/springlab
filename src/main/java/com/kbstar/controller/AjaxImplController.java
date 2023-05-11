@@ -9,6 +9,7 @@ import com.kbstar.service.CartService;
 import com.kbstar.service.CustService;
 import com.kbstar.service.MarkerService;
 import com.kbstar.util.FileUploadUtil;
+import com.kbstar.util.WeatherUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -143,4 +144,14 @@ public class AjaxImplController {
         cartService.register(cart);
         return "";
     }
+
+    @RequestMapping("/weather2")
+    public Object weather2() throws Exception{
+        return WeatherUtil.getWeather3("108");
+    }
+
+//    @RequestMapping("/weather3")
+//    public Object weather3() throws Exception{
+//        return WeatherUtil.getWeather3("108");
+//    }
 }
