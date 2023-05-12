@@ -5,6 +5,7 @@ import com.kbstar.dto.Ncp;
 import com.kbstar.util.CFRCelebrityUtil;
 import com.kbstar.util.CFRFaceUtil;
 import com.kbstar.util.FileUploadUtil;
+import com.kbstar.util.OCRUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -122,6 +123,42 @@ public class NcpController {
 
         model.addAttribute("result", map);
         model.addAttribute("center", "pic");
+
+        return "index";
+    }
+
+    @RequestMapping("/ocr1impl")
+    public String ocr1impl(Model model, Ncp ncp) throws ParseException {
+        // 이미지 저장
+        FileUploadUtil.saveFile(ncp.getImg(), imgpath);
+        // NCP에 요청한다
+        String imgname = ncp.getImg().getOriginalFilename();
+
+        JSONObject result = (JSONObject) OCRUtil.getResult(imgpath, imgname);
+        log.info(result.toJSONString());
+
+        Map<String, String> map = OCRUtil.getData1(result);
+
+        model.addAttribute("result", map);
+        model.addAttribute("center", "ocr1");
+
+        return "index";
+    }
+
+    @RequestMapping("/ocr2impl")
+    public String ocr2impl(Model model, Ncp ncp) throws ParseException {
+        // 이미지 저장
+        FileUploadUtil.saveFile(ncp.getImg(), imgpath);
+        // NCP에 요청한다
+        String imgname = ncp.getImg().getOriginalFilename();
+
+        JSONObject result = (JSONObject) OCRUtil.getResult(imgpath, imgname);
+        log.info(result.toJSONString());
+
+        Map<String, String> map = OCRUtil.getData2(result);
+
+        model.addAttribute("result", map);
+        model.addAttribute("center", "ocr2");
 
         return "index";
     }
