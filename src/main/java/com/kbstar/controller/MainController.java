@@ -24,8 +24,8 @@ public class MainController {
     Logger logger = LoggerFactory.getLogger(this.getClass().getSimpleName());
     @Autowired
     CustService custService;
-//    @Value("${adminserver}")
-//    String adminserver;
+    @Value("${adminserver}")
+    String adminserver;
 
     @RequestMapping("/")
     public String main(Model model) throws Exception{
@@ -151,6 +151,26 @@ public class MainController {
     @RequestMapping("/ocr2")
     public String ocr2(Model model) {
         model.addAttribute("center", "ocr2");
+        return "index";
+    }
+
+    @RequestMapping("/chatbot")
+    public String chatbot(Model model, HttpSession session) {
+        if (session.getAttribute("logincust") == null) {
+            return "redirect:/login";
+        }
+        model.addAttribute("adminserver", adminserver);
+        model.addAttribute("center", "chatbot");
+        return "index";
+    }
+
+    @RequestMapping("/callcenter")
+    public String callcenter(Model model, HttpSession session) {
+        if (session.getAttribute("logincust") == null) {
+            return "redirect:/login";
+        }
+        model.addAttribute("adminserver", adminserver);
+        model.addAttribute("center", "callcenter");
         return "index";
     }
 }
